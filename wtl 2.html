@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloth</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: viewport;
+    width: viewport;
+    /* background-color: red; */
+}
+
+.nav{
+    height: 80px;
+    width: 100vw ;
+    background-color: rgb(68, 145, 151);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.044);
+}
+
+.nav img{
+    height: 60px;
+}
+
+.nav header{
+    margin-left: 60px;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.hero-img{
+    width: 100%;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.new-text{
+    font-size: 48px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+
+#p1{
+    color: #528daf;
+    
+}
+
+#p2{
+    color: #b03f3f;
+    margin-left: 15px;
+}
+
+.cloths{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+
+.product-card{
+    padding: 15px;
+}
+.cloths div img{
+    /* padding: 15px; */
+    height: 400px;
+
+}
+
+.cloths div .p-info{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    color: rgb(105, 52, 124) ;
+    font-size: 15px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.cloths div p{
+    font-size: 20px;
+    font-family:   Arial, sans-serif;
+    color: #808183;
+    
+}
+#price{
+    margin-top: 5px;
+    color: #1f3175;
+    font-weight: bold;
+
+}
+#price strike {
+    color:#263b66;
+    font-size: 15px;
+    margin-left: 7px;
+}
+
+.sec-3{
+    width: 100%;
+    display: flex;
+    padding-left: 180px;
+    padding-right: 180px;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.s1{
+    font-size: 48px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #808188;
+    line-height: 1;
+}
+
+.s2 {
+    color: rgb(83, 18, 18);
+    /* row-gap: 1px; */
+}
+
+.sec3-img{
+    width: 570px;
+}
+
+.para-content {
+    /* display: flex; */
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="nav">
+            <img src="logo.png" alt="">
+            <header >
+                <p class="">Home</p>
+                <p>Products</p>
+                <p>Contact</p>
+                <p>About</p>
+            </header>
+        </div>
+
+        <div class="hero-sec">
+            <img class="hero-img" src="hero.webp" alt="">
+        </div>
+        <div class="new-text">
+            <p id="p1">NEW</p>
+            <p id="p2">CLOTHINGS</p>
+        </div>
+
+        <div class="cloths">
+            <div class="product-card">
+                <img src="jacket.webp" alt="">
+                <p class="p-info">
+                    BLACK SUITS 
+                </p>
+                <p class="p-info">
+                    GW8421-23
+                </p>
+                <img src="https://i.etsystatic.com/31737802/r/il/0d00e9/3412298529/il_1080xN.3412298529_e7q3.jpg"/>
+                <p>SHOW YOUR STYLE</p>
+                <p id="price">$6999/-  <strike>$9999</strike></p>
+            </div>
+
+            <div class="product-card">
+                <img src="jacket.webp" alt="">
+                <p class="p-info">
+                    T SHIRTS
+                </p>
+                <p class="p-info">
+                    GW8422-23
+                </p>
+               <img src=" https://th.bing.com/th/id/OIP.ouJF3CCzSINEypZIOMxVRgHaLH?rs=1&pid=ImgDetMain"/>
+                <p>SHOW YOUR GLORY.</p>
+                <p id="price">$1999/-  <strike>$3999</strike></p>
+            </div>
+
+            <div class="product-card">
+                <img src="jacket.webp" alt="">
+                <p class="p-info">
+                    PANTS
+                </p>
+                <p class="p-info">
+                    GW8423-23
+                </p>
+                <img src="https://www.cultizm.com/media/image/f8/e9/02/CARHARTT-WIP_I020074-0WH-02-Master-Pant-65-35-Boxwood-Rinsed_2.jpg"/>
+                <p>ENLEASH YOUR FASHION.</p>
+                <p id="price">$1999/-  <strike>$2999</strike></p>
+            </div>  
+            <div class="product-card">
+                <img src="jacket.webp" alt="">
+                <p class="p-info">
+                    HOODIES
+                </p>
+                <p class="p-info">
+                    GW8424-23
+                </p>
+                <img src="https://th.bing.com/th/id/OIP.wfY3wcNBOrSOQUdPAGYugwHaHa?w=183&h=183&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                <p>LIVE YOUR DREAM.</p>
+                <p id="price">$3999/-  <strike>$6999</strike></p>
+            </div>
+        </div>
+
+        <!-- sec 3 -->
+        <div class="sec-3">
+            <div class="para-content">
+
+                <span class="s1">
+                    YOUR  <BR> FASHION: <span class="s2">YOUR </BR>
+                    STATEMENTS <br>
+                    UNWRAP YOUR STYLE</span>
+                </span>
+                <!-- <p class="p1">
+                    SUMMER <br> BREEZE 2024:
+                    <p class="p2">
+                        WHERE STYLE MEETS SUNSHINE
+                    </p>
+                </p> -->
+                <p class="p3">At NEW CLOTHINGS , we believe that fashion is not just about clothes, it's a way of life. Whether you're looking for casual wear, formal attire, or something in between, we offer high-quality clothing that fits your unique style. Explore our collection and find pieces that make you feel confident and beautiful.
+
+                    Our curated collections are designed to suit every occasion, every season, and every personality. From classic staples to bold new trends, we’ve got you covered!
+                    
+                    Start Shopping Now!1 
+                    
+                    
+                </p>
+            </div>
+            <div>
+                <img class="sec3-img" src="sec3.webp" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="footer">
+    <p>&copy; 2025 NEW CLOTHINGS. ALL RIGHTS RESERVED. | 
+        <a href="/privacy-policy">PRIVACY POLICY</a> | 
+        <a href="/terms-and-conditions">TERMS AND CONDITIONS</a>
+   
+    </footer>
+    
+    <style>
+        .footer {
+            background-color: black; /* Set the background color to black */
+            color: white; /* Set text color to white for contrast */
+            text-align: center; /* Center align the text */
+            padding: 20px; /* Padding around the footer content */
+            font-weight: bold; /* Make text bold */
+        }
+    
+        .footer a {
+            color: white; /* Set the color of links to white */
+            text-decoration: none; /* Remove underline from links */
+        }
+    
+        .footer a:hover {
+            text-decoration: underline; /* Underline links when hovered */
+        }
+    </style>
+    
+
+</html>
