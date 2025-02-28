@@ -1,0 +1,128 @@
+<html>
+<head>
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        table {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-collapse: collapse;
+        }
+        input[type="button"] {
+            font-size: 20px;
+            padding: 15px;
+            margin: 5px;
+            width: 60px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f4f4f4;
+            cursor: pointer;
+            transition: background-color 0.2s;
+        }
+        input[type="button"]:hover {
+            background-color: #e0e0e0;
+        }
+        input[type="text"] {
+            font-size: 20px;
+            padding: 10px;
+            text-align: right;
+            width: 260px;
+            margin-bottom: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        input[type="button"].clear {
+            background-color: #ff4d4d;
+            color: white;
+        }
+        input[type="button"].clear:hover {
+            background-color: #ff3333;
+        }
+        input[type="button"].equal {
+            background-color: #4CAF50;
+            color: white;
+        }
+        input[type="button"].equal:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <script lang="javascript">
+        function add() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = a + b;
+            document.getElementById("c").value = c;
+        }
+        function sub() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = a - b;
+            document.getElementById("c").value = c;
+        }
+        function mul() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = a * b;
+            document.getElementById("c").value = c;
+        }
+        function div() {
+            var a = parseInt(document.getElementById("a").value);
+            var b = parseInt(document.getElementById("b").value);
+            var c = a / b;
+            document.getElementById("c").value = c;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="b1">
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="d" size="20" readonly>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="document.getElementById('d').value += '1'"></td>
+                <td><input type="button" value="2" onclick="document.getElementById('d').value += '2'"></td>
+                <td><input type="button" value="3" onclick="document.getElementById('d').value += '3'"></td>
+                <td><input type="button" value="+" onclick="document.getElementById('d').value += '+'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="document.getElementById('d').value += '4'"></td>
+                <td><input type="button" value="5" onclick="document.getElementById('d').value += '5'"></td>
+                <td><input type="button" value="6" onclick="document.getElementById('d').value += '6'"></td>
+                <td><input type="button" value="-" onclick="document.getElementById('d').value += '-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="document.getElementById('d').value += '7'"></td>
+                <td><input type="button" value="8" onclick="document.getElementById('d').value += '8'"></td>
+                <td><input type="button" value="9" onclick="document.getElementById('d').value += '9'"></td>
+                <td><input type="button" value="*" onclick="document.getElementById('d').value += '*'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="document.getElementById('d').value += '0'"></td>
+                <td><input type="button" value="." onclick="document.getElementById('d').value += '.'"></td>
+                <td><input type="button" value="/" onclick="document.getElementById('d').value += '/'"></td>
+                <td><input type="button" value="=" class="equal" onclick="document.getElementById('d').value = eval(document.getElementById('d').value)"></td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <input type="button" value="C" class="clear" onclick="document.getElementById('d').value = ''">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
